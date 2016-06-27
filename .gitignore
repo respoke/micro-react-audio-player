@@ -1,0 +1,7 @@
+build
+node_modules
+public/js/app.min.js
+public/js/app.min.js.map
+config/local.js
+*.log
+WIP.md
