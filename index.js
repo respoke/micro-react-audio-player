@@ -1,8 +1,10 @@
 const React = require('react');
 const PropTypes = React.PropTypes;
 
-const defaultPlay = <span>▶</span>;
-const defaultPause = <span>❙❙</span>;
+const PLAY = '▶';
+const PAUSE = '❙❙';
+const defaultPlay = <span>{PLAY}</span>;
+const defaultPause = <span>{PAUSE}</span>;
 
 const playerContainerStyles = {
   display: 'block',
@@ -43,7 +45,8 @@ const AudioPlayer = React.createClass({
     sourceType: PropTypes.string.isRequired,
     playElement: PropTypes.object,
     pauseElement: PropTypes.object,
-    autoPlay: PropTypes.any
+    autoPlay: PropTypes.any,
+    onPlay: PropTypes.func
   },
   getInitialState() {
     return {
@@ -95,6 +98,9 @@ const AudioPlayer = React.createClass({
       this.setState({
         paused: false
       });
+      if (this.props.onPlay) {
+        this.props.onPlay();
+      }
     } else {
       this.refs.audioElement.pause();
       this.setState({

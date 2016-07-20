@@ -14,6 +14,7 @@ import Player from 'micro-react-audio-player';
 const MyCustomComponent = React.createClass({
     render() {
         const source = 'http://www.w3schools.com/html/horse.ogg';
+        const sourceType = 'audio/ogg';
         const play = <span>Play</span>; // optional
         const pause = <span>Pause</span>; // optional
         const shouldAutoplay = true; // optional
