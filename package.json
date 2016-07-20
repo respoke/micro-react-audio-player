@@ -1,6 +1,6 @@
 {
   "name": "micro-react-audio-player",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Very small html5 audio player for React",
   "main": "index.js",
   "scripts": {
