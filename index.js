@@ -6,7 +6,8 @@ const defaultPause = <span>&#10074;&#10074;</span>;
 
 const playerContainerStyles = {
   display: 'block',
-  width: '100%'
+  width: '100%',
+  position: 'relative'
 };
 const playPauseButtonLayoutStyles = {
   display: 'inline-block',
