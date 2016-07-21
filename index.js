@@ -2,7 +2,7 @@ const React = require('react');
 const PropTypes = React.PropTypes;
 
 const defaultPlay = <span>&#9654;</span>;
-const defaultPause = <span>&#9611;&#9611;</span>;
+const defaultPause = <span>&#9612;&#9612;</span>;
 
 const playerContainerStyles = {
   display: 'block',
