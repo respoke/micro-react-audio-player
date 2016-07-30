@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.digium.com:7999/~jparrish/micro-react-audio-player.git"
+    "url": "http://github.com/respoke/micro-react-audio-player.git"
   },
   "peerDependencies": {
     "babel-preset-es2015": "^6.9.0",
